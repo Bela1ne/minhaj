@@ -1,0 +1,124 @@
+name: al_minhaj
+description: Application MINHAJ - Coran, Hadith & Récits Prophétiques
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🌍 Localisations (fr + ar)
+  flutter_localizations:
+    sdk: flutter
+
+  # 🧭 Qibla + Boussole (version Git corrigée avec namespace)
+  flutter_compass:
+    git:
+      url: https://github.com/hemanthrajv/flutter_compass.git
+
+  # 📦 Sauvegarde locale (thème, langue, favoris)
+  shared_preferences: ^2.3.3
+
+  # 🌐 Requêtes HTTP
+  http: ^1.6.0
+
+  # 🧭 Localisation géographique
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+
+  # 🕌 Prières & calculs islamiques
+  adhan: ^2.0.0
+  prayer_timetable: ^2.2.4
+
+  # 📅 Calendrier Hijri
+  hijri: ^3.0.0
+  hijri_calendar: ^1.0.7+7
+
+  # 🕋 PDF Mushaf Warsh
+  syncfusion_flutter_pdfviewer: ^31.2.5
+
+  # 🔔 Notifications locales (adhan, adhkar…)
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+
+  # 🔊 Audio / Adhan
+  audioplayers: ^6.1.0
+  just_audio: ^0.10.5
+
+  # 🌈 Animations fluides
+  flutter_animate: ^4.5.0
+
+  # 🌐 WebView pour sources externes (hadiths, tafsir…)
+  webview_flutter: ^4.7.0
+
+  # 🖼️ SVG et partage
+  flutter_svg: ^2.0.10+1
+  share_plus: ^12.0.1
+  url_launcher: ^6.3.0
+
+  # 🧠 Provider pour thème/langue
+  provider: ^6.1.2
+
+  # ⚙️ Gestion des alarmes Android (adhan, rappel)
+  android_alarm_manager_plus: ^5.0.0
+
+  # 🧭 Capteurs (accéléromètre, gyroscope)
+  sensors_plus: ^7.0.0
+
+  # 🎨 Icônes Cupertino
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/compass_full.png
+    - assets/images/kaaba_icon.png
+    - assets/images/kaaba_bottom.png
+    - assets/images/mosque_background.jpg
+    - assets/images/ic_launcher.png
+    - assets/images/books/tafsir.jpg
+    - assets/images/books/nawawiya.jpg
+    - assets/images/books/hadith_qudssi.jpg
+    - assets/images/books/minhaj_muslim.jpg
+    - assets/images/books/sahih_bukhari.jpg
+    - assets/images/books/sahih_muslim.jpg
+    - assets/images/books/riyad_salihin.jpg
+    - assets/images/books/fath_majid.jpg
+    - assets/images/books/zad_almaad.jpg
+    - assets/icons/
+    - assets/fonts/
+    - assets/data/books/tafsir.pdf
+    - assets/data/books/nawawiya.pdf
+    - assets/data/books/hadithqudssi.pdf
+    - assets/data/books/minhajmuslim.pdf
+    - assets/data/books/sahihbukhari.pdf
+    - assets/data/books/sahihmuslim.pdf
+    - assets/data/books/riyadsalihin.pdf
+    - assets/data/books/fathmajid.pdf
+    - assets/data/books/zadalmaad.pdf
+    - assets/audio/adhan.mp3
+    - assets/quran/quran_warsh.pdf
+
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    - family: Uthmanic
+      fonts:
+        - asset: assets/fonts/Uthmanic.otf
+    - family: KFGQ
+      fonts:
+        - asset: assets/fonts/KFGQPC_Uthmanic_Script_HAFS.otf
